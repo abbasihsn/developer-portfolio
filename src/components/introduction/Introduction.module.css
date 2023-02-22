@@ -1,0 +1,142 @@
+.introduction {
+    /* background-color: rgba(144, 210, 210, 0.3); */
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction__text {
+    flex: 50%;
+    display: flex;
+    padding-left: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.introduction__text a {
+    margin: 50px 0px 0px 100px;
+    background-color: transparent;
+    border: 2px solid var(--text-color);
+    padding: 10px 15px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    color: var(--text-color);
+    box-shadow: 0 0 5px gray;
+}
+
+.introduction__text a:hover {
+    box-shadow: 0 0 10px var(--text-color);
+}
+
+.introduction__image {
+    flex: 50%;
+}
+
+
+.introduction__image img {
+    width: 500px;
+    height: 500px;
+}
+
+.introduction h1 {
+    color: var(--text-color);
+    font-size: 5rem;
+    line-height: 10px;
+}
+
+.introduction h3 {
+    color: var(--text-color);
+    font-size: 2rem;
+    line-height: 10px;
+}
+
+.description {
+    width: 90%;
+}
+
+.description p {
+    color: var(--text-color);
+}
+
+
+@media only screen and (max-width: 1150px) {
+    .introduction h1 {
+        color: var(--text-color);
+        font-size: 3rem;
+        line-height: 10px;
+    }
+
+    .introduction__image img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .introduction h3 {
+        color: var(--text-color);
+        font-size: 1.3rem;
+        line-height: 10px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .introduction h1 {
+        color: var(--text-color);
+        font-size: 2rem;
+        line-height: 10px;
+    }
+
+    .introduction__image img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .introduction h3 {
+        color: var(--text-color);
+        font-size: 1rem;
+        line-height: 10px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .introduction h1 {
+        color: var(--text-color);
+        font-size: 2rem;
+        line-height: 10px;
+    }
+
+    .introduction__image img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .introduction h3 {
+        color: var(--text-color);
+        font-size: 1rem;
+        line-height: 10px;
+    }
+
+    .introduction__text {
+        padding-left: 100px;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .introduction {
+        margin: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .introduction__image {
+        flex: 50%;
+    }
+    
+    
+}

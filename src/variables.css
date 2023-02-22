@@ -1,0 +1,15 @@
+:root{
+    --main-color: rgb(19, 9, 29);
+    --title-color: rgb(8, 133, 75);
+    --text-color: rgb(209, 174, 245);
+    --text-hover-color: rgb(102, 93, 111);
+    --social-color: rgb(99, 86, 113);
+    --project--item-color: rgb(96, 80, 103);
+    --project--tools-color: rgb(126, 198, 126);
+    --project--title-color: rgb(27, 72, 27);
+    --project--description-color: rgb(50, 96, 50);
+    --skill--item-color: rgba(69, 68, 70, 0.261);
+    --skill--item--border-color: rgb(69, 68, 70);
+    --navbar-color: rgb(17, 8, 26);
+    --border-radius: 8px;
+}

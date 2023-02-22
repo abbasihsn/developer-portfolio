@@ -1,0 +1,9 @@
+.icon img {
+    margin: 5px;
+}
+
+.icon img:hover{
+    transform: translateY(-10px);
+    background-color: var(--social-color);
+    border-radius: var(--border-radius);
+}

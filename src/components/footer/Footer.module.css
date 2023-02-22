@@ -1,0 +1,13 @@
+.footer{
+    /* background-color: rgba(237, 216, 140, 0.582); */
+    height: 50px;
+    margin: 0;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.footer h1{
+    color: rgb(51, 20, 79);
+    font-size: 10px;
+}

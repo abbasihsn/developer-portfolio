@@ -1,0 +1,42 @@
+.skills {
+    /* background-color: rgba(155, 155, 186, 0.321); */
+    height: 300px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    color: var(--text-color);
+}
+
+.skills h1 {
+    line-height: 10px;
+}
+
+
+.slider {
+    height: 300px;
+    width: 700px;
+    background-color: red;
+}
+
+.carousel__main{
+    /* background-color: blueviolet; */
+    height: 200px;
+    width: 90vw;
+    border: 2px solid var(--text-color);
+    border-radius: 10px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.carousel__main_ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.carousel__main_li{
+    list-style: none;
+}
+

@@ -1,0 +1,12 @@
+.StyledSlider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SlideImage{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
