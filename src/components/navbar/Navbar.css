@@ -53,7 +53,7 @@
     padding-right: 5px;
   }
   .Navbar .leftSide h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
     color: var(--title-color);
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -61,6 +61,9 @@
     white-space: nowrap; /* Keeps the content on a single line */
     /* margin: 0 auto; /*Gives that scrolling effect as the typing happens */
     letter-spacing: .1em; /* Adjust as needed */
+  }
+
+  .runAnimation h2{
     animation: 
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
@@ -86,11 +89,11 @@
     }
 
     .Navbar .leftSide h2 {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 
     .Navbar .leftSide img{
-      height: 25px;width: 25px;
+      height: 20px;width: 20px;
       padding-right: 2px;
     }
   }
@@ -100,14 +103,17 @@
       font-size: 1rem;
     }
 
+    .Navbar .leftSide {
+      padding-left: 5px;
+      padding-top: 10px;
+    }
 
     .Navbar .leftSide img{
-      height: 30px;width: 30px;
-      padding-right: 2px;
+      display: none;
     }
 
     .Navbar .leftSide h2 {
-      font-size: 1.5rem;
+      font-size: 0.7rem;
     }
   
     .Navbar .rightSide .links {

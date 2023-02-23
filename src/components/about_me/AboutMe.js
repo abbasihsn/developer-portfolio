@@ -25,7 +25,19 @@ const AboutMe = () => {
                     have more than 5 years of experience in the field of Machine Learning and Computer vidsion and +4 years as a fullstack developer</p>
             </div>
             <div className={classes.button__section}>
-                <Button title="CV" onClick={() => console.log("download CV")} />
+                <Button title="CV" onClick={() => {
+                    fetch('CV.pdf').then(response => {
+                        response.blob().then(blob => {
+                            // Creating new object of PDF file
+                            const fileURL = window.URL.createObjectURL(blob);
+                            // Setting various property values
+                            let alink = document.createElement('a');
+                            alink.href = fileURL;
+                            alink.download = 'CV.pdf';
+                            alink.click();
+                        })
+                    })
+                }} />
                 <div className={classes.social}>
                     {socialMedia.map(item => <Icon src={item.src} href={item.href} key={item.id} link={item.link} />)}
                 </div>

@@ -25,7 +25,6 @@
     /* background-color: blueviolet; */
     height: 200px;
     width: 90vw;
-    border: 2px solid var(--text-color);
     border-radius: 10px;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -34,6 +33,7 @@
 .carousel__main_ul{
     display: flex;
     flex-direction: row;
+    transition: 400ms ease-in-out;
 }
 
 .carousel__main_li{

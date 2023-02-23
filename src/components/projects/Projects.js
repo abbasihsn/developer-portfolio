@@ -1,7 +1,7 @@
 import classes from "./Projects.module.css"
 import project1 from "../../assets/project1.png"
 import ProjectItem from "./ProjectItem"
-import { useState } from "react"
+import { useState, useEffect} from "react"
 import useWindowDimensions from "../UI/useWindowDimensions"
 
 
@@ -14,43 +14,50 @@ const Projects = () => {
         { title: "Calorie Counter APP", description: "An application using flutter", src: project1, tools: "Flutter | NodeJS | MongoDB", id: 3 },
     ]
 
-    
-    const { height, width } = useWindowDimensions();
-    let n=1;
-    if (width>1450) { 
-        n=3;
-    }
-    else if (width > 1000) {
-        n = 2;
-    }
+    const length = projects.length
+    const { width } = useWindowDimensions();
+    const itemPerRow = Math.floor((width * 0.7)/300);
+    const numberOfRows = Math.ceil(length/itemPerRow)
+
+    // console.log(`screen width: ${width} - item per row: ${itemPerRow} - number of rows: ${numberOfRows}`)
+    const MINUTE_MS = 5000;
+    useEffect(() => {
+        const interval = setInterval(() => {
+            if (current < numberOfRows-1) {
+                setCurrent(prev => prev + 1)
+            } else{
+                setCurrent(0)
+            }
+        }, MINUTE_MS);
+
+        return () => clearInterval(interval); // This represents the unmount function, in which you need to clear your interval to prevent memory leaks
+    }, [numberOfRows, current])
+
 
     return <div className={classes.projects}>
-        <h1>Projects</h1>
+        <h1>Projects <small>{(current+1)}/{numberOfRows}</small></h1>
         <div className={classes.carousel__projects}>
             <button onClick={() => {
                 if (current <= 0) {
-                    setCurrent(0)
+                    setCurrent(numberOfRows-1)
                 } else {
                     setCurrent(prev => prev - 1)
                 }
             }}>{'<'}</button>
             <div className={classes.project__list}>
-                <ul className={classes.project__list__ul} style={{ transition: "500ms ease 0ms", transform: `translate3d(${-20 - (current * width/(n+0.5))}px, 0px, 0px)` }}>
-                    {projects.map(item => <li className={classes.project__list__li} key={item.id} ><ProjectItem title={item.title + item.id} description={item.description} src={item.src} id={item.id} tools={item.tools} /></li>)}
+                <ul className={classes.project__list__ul} style={{ transition: "1000ms ease 0ms"}}>
+                    {projects.splice(current*itemPerRow, itemPerRow + current * itemPerRow).map(item => <li className={classes.project__list__li} key={item.id} ><ProjectItem title={item.title + item.id} description={item.description} src={item.src} id={item.id} tools={item.tools} /></li>)}
                 </ul>
             </div>
             <button onClick={() => {
-                console.log(n)
-                const temp = Math.ceil(projects.length / n)
-                console.log(temp)
-                if (current >= temp) {
-                    setCurrent(temp)
+                if (current >= numberOfRows-1) {
+                    setCurrent(0)
                 } else {
                     setCurrent(prev => prev + 1)
                 }
             }}>{'>'}</button>
         </div>
-
+        
     </div>
 }
 

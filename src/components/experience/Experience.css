@@ -1,0 +1,9 @@
+.experience__section{
+    display: flex;
+    flex-direction: row;
+}
+
+.experience__container{
+    display: flex;
+    flex-direction: column;
+}

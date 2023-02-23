@@ -6,7 +6,7 @@ import Introduction from './components/introduction/Introduction';
 import Navbar from './components/navbar/Navbar';
 import Projects from './components/projects/Projects';
 import Skills from './components/skills/Skills';
-import { useEffect } from 'react';
+import Experience from './components/experience/Experience';
 
 function App() {
 
@@ -33,20 +33,20 @@ function App() {
     },
   ];
 
-  
+
   const logoTitle = {
     title: "HASAN ABBASI",
     path: "#",
   };
 
   return <div className='app'>
-  <Navbar itemList={itemList} logoTitle={logoTitle} />
-  
-  <Introduction />
-  <AboutMe />
-  <Skills />
-  <Projects />
-  <Footer />
+    <Navbar itemList={itemList} logoTitle={logoTitle} />
+
+    <Introduction />
+    <AboutMe />
+    <Skills />
+    <Projects />
+    <Footer />
   </div>
 }
 
