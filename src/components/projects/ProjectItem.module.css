@@ -40,6 +40,12 @@
     padding: 14px;
 }
 
+.application img {
+    height: 280px;
+    width: 180px;
+    padding: 14px;
+}
+
 .project__item h1 {
     font-size: 20px;
     color: var(--project-title-color);
@@ -75,6 +81,13 @@
         width: 270px;
         padding: 5px;
     }
+
+    .application img {
+        height: 200px;
+        width: 120px;
+        padding: 14px;
+    }
+    
 
 
     .project__item h1 {

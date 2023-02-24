@@ -1,5 +1,7 @@
 import classes from "./Projects.module.css"
 import project1 from "../../assets/project1.png"
+import project2 from "../../assets/project2.jpg"
+import project3 from "../../assets/project3.jpg"
 import ProjectItem from "./ProjectItem"
 import { useState, useEffect} from "react"
 import useWindowDimensions from "../UI/useWindowDimensions"
@@ -8,10 +10,10 @@ import useWindowDimensions from "../UI/useWindowDimensions"
 const Projects = () => {
     const [current, setCurrent] = useState(0)
     const projects = [
-        { title: "Calorie Counter APP", description: "An application using flutter", src: project1, tools: "Flutter | NodeJS | MongoDB", id: 0 },
-        { title: "Calorie Counter APP", description: "An application using flutter", src: project1, tools: "Flutter | NodeJS | MongoDB", id: 1 },
-        { title: "Calorie Counter APP", description: "An application using flutter", src: project1, tools: "Flutter | NodeJS | MongoDB", id: 2 },
-        { title: "Calorie Counter APP", description: "An application using flutter", src: project1, tools: "Flutter | NodeJS | MongoDB", id: 3 },
+        { title: "Developer Portfolio", description: "Website with pure HTMAL, CS and JS without any package!", src: project1, tools: "ReactJS | CSS | HTML", id: 0, type:"web"},
+        { title: "Iranian Stock Analysis", description: "It helps you to review the stock market status.", src: project2, tools: "Flutter | NodeJS | MongoDB", id: 1, type:"app"},
+        { title: "Persian Time Tracker", description: "An application using flutter", src: project3, tools: "Flutter | NodeJS | MongoDB", id: 2 , type:"app"},
+        { title: "Calorie Counter APP", description: "An application using flutter", src: project1, tools: "Flutter | NodeJS | MongoDB", id: 3 , type:"web"},
     ]
 
     const length = projects.length
@@ -46,7 +48,7 @@ const Projects = () => {
             }}>{'<'}</button>
             <div className={classes.project__list}>
                 <ul className={classes.project__list__ul} style={{ transition: "1000ms ease 0ms"}}>
-                    {projects.splice(current*itemPerRow, itemPerRow + current * itemPerRow).map(item => <li className={classes.project__list__li} key={item.id} ><ProjectItem title={item.title + item.id} description={item.description} src={item.src} id={item.id} tools={item.tools} /></li>)}
+                    {projects.splice(current*itemPerRow, itemPerRow + current * itemPerRow).map(item => <li className={classes.project__list__li} key={item.id} ><ProjectItem title={item.title + item.id} description={item.description} src={item.src} id={item.id} tools={item.tools} type={item.type}/></li>)}
                 </ul>
             </div>
             <button onClick={() => {
