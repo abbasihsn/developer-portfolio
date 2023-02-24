@@ -48,7 +48,7 @@ const Projects = () => {
             }}>{'<'}</button>
             <div className={classes.project__list}>
                 <ul className={classes.project__list__ul} style={{ transition: "1000ms ease 0ms"}}>
-                    {projects.splice(current*itemPerRow, itemPerRow + current * itemPerRow).map(item => <li className={classes.project__list__li} key={item.id} ><ProjectItem title={item.title + item.id} description={item.description} src={item.src} id={item.id} tools={item.tools} type={item.type}/></li>)}
+                    {projects.splice(current*itemPerRow, itemPerRow + current * itemPerRow).map(item => <li className={classes.project__list__li} key={item.id} ><ProjectItem title={item.title} description={item.description} src={item.src} id={item.id} tools={item.tools} type={item.type}/></li>)}
                 </ul>
             </div>
             <button onClick={() => {
