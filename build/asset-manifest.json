@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b83dbfe0.css",
+    "main.js": "/static/js/main.056978bf.js",
+    "static/js/787.d0fc6f61.chunk.js": "/static/js/787.d0fc6f61.chunk.js",
+    "static/media/mongo.png": "/static/media/mongo.365daebc8cd027f03033.png",
+    "static/media/postgress.png": "/static/media/postgress.5a13e254fb0c5ae14652.png",
+    "static/media/react.png": "/static/media/react.8a6fc0a24a800d1e0f4a.png",
+    "static/media/project2.jpg": "/static/media/project2.bf78c5d87722a6ec2cb8.jpg",
+    "static/media/project1.png": "/static/media/project1.72b07407fe16299373fb.png",
+    "static/media/c.png": "/static/media/c.56b146ae4d89bcd7714f.png",
+    "static/media/intro.png": "/static/media/intro.895db277d646e0a9467b.png",
+    "static/media/project3.jpg": "/static/media/project3.f44f989095a549aed939.jpg",
+    "static/media/postman.png": "/static/media/postman.01960bbc426bf10ad378.png",
+    "static/media/html.png": "/static/media/html.1336fa4c1237f6c1032d.png",
+    "static/media/about_me.svg": "/static/media/about_me.0792e732824567f51677c3b85449f77c.svg",
+    "static/media/github.png": "/static/media/github.237e2214562c441f67b2.png",
+    "static/media/tag.png": "/static/media/tag.877f850414db61caa2c9.png",
+    "static/media/dart.png": "/static/media/dart.57b180276217ed1812fa.png",
+    "static/media/stackoverflow.png": "/static/media/stackoverflow.0123b8df35f2e7d20bc8.png",
+    "static/media/gitlab.png": "/static/media/gitlab.154caaf6a91a6c6178b1.png",
+    "index.html": "/index.html",
+    "static/media/js_logo.svg": "/static/media/js_logo.b879f838faf1cb951d1c2230fd933a39.svg",
+    "static/media/flutter.svg": "/static/media/flutter.83219c099347619051f3aa0fa0e2108e.svg",
+    "main.b83dbfe0.css.map": "/static/css/main.b83dbfe0.css.map",
+    "main.056978bf.js.map": "/static/js/main.056978bf.js.map",
+    "787.d0fc6f61.chunk.js.map": "/static/js/787.d0fc6f61.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b83dbfe0.css",
+    "static/js/main.056978bf.js"
+  ]
+}
