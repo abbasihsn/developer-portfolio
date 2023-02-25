@@ -18,6 +18,12 @@
     justify-content: flex-start;
 }
 
+.project__item__caption {
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+}
+
 .project__item .tools {
     display: flex;
     flex-direction: row;
@@ -25,7 +31,9 @@
 
 .project__item .tools p {
     padding-right: 5px;
-    color: var(--project--tools-color);
+    background: -webkit-linear-gradient(var(--project--tools-color), var(--project--tools-color1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 15px;
 }
 
@@ -46,13 +54,22 @@
     padding: 14px;
 }
 
-.project__item h1 {
+.project__item__text .project__item__caption h1 {
     font-size: 20px;
-    color: var(--project-title-color);
+    background: -webkit-linear-gradient(var(--text-color), var(--text-color1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .project__item p {
-    font-size: 20px;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
     color: var(--project-description-color);
 }
 
@@ -64,6 +81,27 @@
     box-shadow: 0 0 10px rgba(94, 81, 91, 0.8);
 }
 
+
+.project__item__button{
+    margin: 0px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+.project__item__button button{
+    background-color: transparent;
+    color: rgba(94, 81, 91, 0.8);
+}
+
+.project__item__button button:hover{
+    box-shadow: none;
+    color: var(--text-color);
+    transform: translateY(-5px);
+    font-weight: bold;
+}
 
 @media only screen and (max-width: 600px) {
     .project__item {
@@ -87,14 +125,14 @@
         width: 120px;
         padding: 14px;
     }
-    
+
 
 
     .project__item h1 {
         font-size: 1rem;
         color: var(--project-title-color);
     }
-    
+
     .project__item p {
         font-size: 14px;
         color: var(--project-description-color);

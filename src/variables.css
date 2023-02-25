@@ -2,10 +2,12 @@
     --main-color: rgb(19, 9, 29);
     --title-color: rgb(8, 133, 75);
     --text-color: rgb(209, 174, 245);
-    --text-hover-color: rgb(102, 93, 111);
+    --text-color1: rgb(118, 42, 250);
+    --text-hover-color: r2gb(102, 93, 111);
     --social-color: rgb(99, 86, 113);
     --project--item-color: rgba(69, 68, 70, 0.261);
-    --project--tools-color: rgb(126, 198, 126);
+    --project--tools-color: rgb(4, 131, 4);
+    --project--tools-color1: rgb(126, 198, 126);
     --project--title-color: rgb(27, 72, 27);
     --project--description-color: rgb(50, 96, 50);
     --skill--item-color: rgba(69, 68, 70, 0.261);

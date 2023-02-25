@@ -55,6 +55,17 @@
     text-align: center;
 }
 
+.contact a{
+    color: rgb(99, 19, 130);
+    text-align: center;
+    text-decoration: none;
+}
+
+.contact a:hover{
+    color: rgb(141, 63, 171);
+    
+}
+
 
 @media only screen and (max-width: 1300px) {
     .about{

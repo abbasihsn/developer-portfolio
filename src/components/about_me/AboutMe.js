@@ -44,7 +44,7 @@ const AboutMe = () => {
             </div>
             <div className={classes.contact}>
                 <h2>Contact me here!</h2>
-                <p>Email: Abbasi.hsnn@gmail.com</p>
+                <a href="mailto:Abbasi.hsnn@gmail.com">Abbasi.hsnn@gmail.com</a>
                 <p>Phone: (343)-988-7644</p>
             </div>
         </div>

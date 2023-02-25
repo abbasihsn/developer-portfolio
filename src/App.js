@@ -1,36 +1,37 @@
 import './App.css';
 import './variables.css'
-import AboutMe from './components/about_me/AboutMe';
-import Footer from './components/footer/Footer';
-import Introduction from './components/introduction/Introduction';
 import Navbar from './components/navbar/Navbar';
-import Projects from './components/projects/Projects';
-import Skills from './components/skills/Skills';
-import Experience from './components/experience/Experience';
+import Main from './views/main/Main';
+import Education from './views/education/Education';
+import WorkExperience from './views/work_experience/WorkExperience';
+import { useState } from 'react';
+import ProjectView from './views/projects/ProjectView';
 
 function App() {
+
+  const [curentBody, setCurrentBody] = useState(0)
 
   const itemList = [
     {
       title: "HOME",
       path: "home__section",
+      idx:0
     },
     {
-      title: "ABOUT ME",
-      path: "about__section",
+      title: "Work Experience",
+      path: "work__experience",
+      idx:2
     },
     {
-      title: "SKILLS",
-      path: "skills__section",
+      title: "Education",
+      path: "education__section",
+      idx:1
     },
     {
       title: "PROJECTS",
       path: "project__section",
-    },
-    {
-      title: "CONTACT ME",
-      path: "contact__section",
-    },
+      idx:3
+    }
   ];
 
 
@@ -39,14 +40,27 @@ function App() {
     path: "#",
   };
 
-  return <div className='app'>
-    <Navbar itemList={itemList} logoTitle={logoTitle} />
 
-    <Introduction />
-    <AboutMe />
-    <Skills />
-    <Projects />
-    <Footer />
+
+  let widget = <Main />
+  if(curentBody === 1){
+    widget = <Education />
+  } else if(curentBody===2){
+    widget = <WorkExperience />
+  } else if(curentBody===3){
+    widget = <ProjectView />
+  }
+
+
+  const bodyHandler = (page)=>{
+    // console.log(`idx: ${page}`)
+    setCurrentBody(page)
+  }
+
+  return <div className='app'>
+    <Navbar itemList={itemList} logoTitle={logoTitle} onClick={bodyHandler}/>
+    {widget}
+    
   </div>
 }
 
