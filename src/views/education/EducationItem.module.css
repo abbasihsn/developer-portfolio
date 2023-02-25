@@ -1,0 +1,45 @@
+/* The actual content */
+.education__content {
+    padding: 20px 30px;
+    background-color: var(--project--item-color);
+    position: relative;
+    border-radius: 6px;
+}
+
+.education__content h1{
+    background: -webkit-linear-gradient(var(--project--tools-color), var(--project--tools-color1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+}
+
+
+.education__content h2{
+    color: gray;
+    font-size: 0.8rem;
+}
+
+.education__content p{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .education__content {
+        padding: 10px 10px;
+    }
+    
+    .education__content h1{
+        font-size: 1rem;
+    }
+    
+    
+    .education__content h2{
+        font-size: 0.6rem;
+    }
+    
+    .education__content p{
+        font-size: 1rem;
+    }
+}

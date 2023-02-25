@@ -1,11 +1,12 @@
 import "./Education.css"
+import EducationItem from "./EducationItem"
 const Education = props => {
 
 
     const educationList = [
         {
             start: "2021",
-            end:"Present",
+            end: "Present",
             degree: "PhD",
             university: "Carleton University",
             gpa: "A+",
@@ -13,7 +14,7 @@ const Education = props => {
         },
         {
             start: "2013",
-            end:"2015",
+            end: "2015",
             degree: "MSc",
             university: "Sharif University of Tech.",
             gpa: "A",
@@ -21,7 +22,7 @@ const Education = props => {
         },
         {
             start: "2009",
-            end:"2013",
+            end: "2013",
             degree: "BSc",
             university: "Shahid Beheshti University",
             gpa: "A+",
@@ -31,16 +32,11 @@ const Education = props => {
     return <div className="education__container">
         <div className="timeline">
             {
-                educationList.map((item, idx)=>{
-                    const dir = (idx%2===0)?"right":"left"
+                educationList.map((item, idx) => {
+                    const dir = (idx % 2 === 0) ? "right" : "left"
                     return <div key={item.degree} className={`container ${dir}`} >
-                    <div className="content">
-                        <h2>{item.start}-{item.end}</h2>
-                        <h1>{item.degree} | {item.university}</h1>
-                        <p>GPA: {item.gpa}</p>
-                        <p>Thesis: {item.thesis}</p>
+                        <EducationItem start={item.start} end={item.end} degree={item.degree} university={item.university} gpa={item.gpa} thesis={item.thesis}/>
                     </div>
-                </div>
                 })
             }
         </div>

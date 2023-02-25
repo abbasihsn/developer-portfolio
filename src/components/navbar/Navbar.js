@@ -8,7 +8,7 @@ function Navbar({ logoTitle, itemList, onClick }) {
   const [className, setClassName] = useState("runAnimation")
 
 
-  const MINUTE_MS = 10000;
+  const MINUTE_MS = 5000;
   useEffect(() => {
     const interval1 = setInterval(() => {
       setClassName("none")

@@ -20,7 +20,7 @@
 }
 
 .description p{
-    line-height: 20px;
+    line-height: 30px;
     text-align: justify;
 }
 
@@ -59,6 +59,8 @@
     color: rgb(99, 19, 130);
     text-align: center;
     text-decoration: none;
+    display: block;
+    padding: 10px;
 }
 
 .contact a:hover{
@@ -197,6 +199,10 @@
 
     .button__section{
         flex-direction: column;
+    }
+
+    .social{
+        margin-top: 10px;
     }
 }
 

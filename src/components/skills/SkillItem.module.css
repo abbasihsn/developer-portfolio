@@ -21,6 +21,7 @@
     background-color: var(--main-color);
     width: 75px;
     height: 75px;
+    padding: 10px;
     border-radius: 100px;
     display: flex;
     justify-content: center;

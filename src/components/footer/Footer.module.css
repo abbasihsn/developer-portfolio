@@ -1,13 +1,16 @@
 .footer{
     /* background-color: rgba(237, 216, 140, 0.582); */
     height: 50px;
-    margin: 0;
+    margin: 50px 0px 0px 0px;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 0px;
+    background-color: var(--navbar-color);
 }
 
-.footer h1{
-    color: rgb(51, 20, 79);
-    font-size: 10px;
+.footer p{
+    color: var(--title-color);
+    font-size: 12px;
+    padding: 5px;
+    margin: 0;
 }

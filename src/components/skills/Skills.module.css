@@ -33,6 +33,7 @@
 .carousel__main_ul{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     transition: 400ms ease-in-out;
 }
 

@@ -34,7 +34,7 @@ const Projects = () => {
         }, MINUTE_MS);
 
         return () => clearInterval(interval); // This represents the unmount function, in which you need to clear your interval to prevent memory leaks
-    }, [numberOfRows, current])
+    }, [numberOfRows, current, itemPerRow])
 
 
     return <div className={classes.projects}>

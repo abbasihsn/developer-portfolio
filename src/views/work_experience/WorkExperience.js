@@ -1,4 +1,5 @@
 import "./WorkExperience.css"
+import WorkExperienceItem from "./WorkExperienceItem"
 const WorkExperience = props => {
 
 
@@ -9,7 +10,7 @@ const WorkExperience = props => {
             position: "Machine learning developer",
             company: "Infilock Company -intern",
             location: "Toronto, Canada, (Remote)",
-            focus: "Anomaly Detection using machine learning methods, Data Analysis, Python developer, Predictive maintenance of HVAC systems"
+            focus: ["Anomaly Detection using machine learning methods", "Data Analysis", "Python developer", "Predictive maintenance of HVAC systems"]
         },
         {
             start: "Jan 2022",
@@ -17,7 +18,7 @@ const WorkExperience = props => {
             position: "Full-stack developer",
             company: "Edgecom Energy - intern",
             location: "Toronto, Canada, (Remote)",
-            focus: "Codeless API service, Python (Machine Learning), ReactJS (Frontend), Node JS (Backend), PostgreSQL, REST APIs."
+            focus: ["Codeless API service", "Python (Machine Learning)", "ReactJS (Frontend)", "Node JS (Backend)", "PostgreSQL", "REST APIs."]
         },
         {
             start: "Sep 2019",
@@ -25,7 +26,7 @@ const WorkExperience = props => {
             position: "Full-stack developer",
             company: "City development and innovation company",
             location: "Tehran, Iran",
-            focus: "City bank mobile application, Frontend: {Flutter (mobile application) - ReactJS (Admin Panel)}, NodeJS (Admin Panel) - Mobile application APIs (JAVA)"
+            focus: ["City bank mobile application", "Frontend: {Flutter (mobile application) - ReactJS (Admin Panel)}", "NodeJS (Admin Panel) - Mobile application APIs (JAVA)"]
         },
         {
             start: "Sep 2019",
@@ -33,7 +34,7 @@ const WorkExperience = props => {
             position: "Full-stack developer",
             company: "E-nemayandeh insurance company (contract)",
             location: "Tehran, Iran (remote)",
-            focus: "Insurance exploration, comparison and analysis application, Flutter (Mobile application), NodeJS, Mongodb"
+            focus: ["Insurance exploration", "comparison and analysis application", "Flutter (Mobile application)", "NodeJS", "Mongodb"]
         },
         {
             start: "Oct 2018",
@@ -41,7 +42,7 @@ const WorkExperience = props => {
             position: "Front-end developer",
             company: "IOEC company",
             location: "Tehran, Iran",
-            focus: "Flutter, ReactJS, PostgreSQL"
+            focus: ["Flutter", "ReactJS", "PostgreSQL"]
         },
         {
             start: "Sep 2015",
@@ -49,7 +50,7 @@ const WorkExperience = props => {
             position: "Research assistant",
             company: "BISP Lab., Sharif University of Tech.",
             location: "Tehran, Iran",
-            focus: "Computer vision, machine learning, biomedical image and signal processing, Biomedical imaging"
+            focus: ["Computer vision", "machine learning", "biomedical image and signal processing", "Biomedical imaging"]
         },
     ]
     return <div className="work_experience__container">
@@ -58,12 +59,7 @@ const WorkExperience = props => {
                 workList.map((item, idx) => {
                     const dir = (idx % 2 === 0) ? "right__work" : "left__work"
                     return <div key={item.degree} className={`work__container ${dir}`} >
-                        <div className="work__content">
-                            <h2>{item.start}-{item.end}</h2>
-                            <h1>{item.position} | {item.company}</h1>
-                            <p>{item.location}</p>
-                            <p>Main Focus: {item.focus}</p>
-                        </div>
+                        <WorkExperienceItem start={item.start} end={item.end} position={item.position} company={item.company} location={item.location} focus={item.focus} />
                     </div>
                 })
             }

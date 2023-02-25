@@ -89,7 +89,7 @@
     }
 
     .Navbar .leftSide h2 {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
 
     .Navbar .leftSide img{
@@ -108,12 +108,13 @@
       padding-top: 10px;
     }
 
-    .Navbar .leftSide img{
+    /* .Navbar .leftSide img{
       display: none;
-    }
+    } */
 
     .Navbar .leftSide h2 {
-      font-size: 0.7rem;
+      padding-left: 5px;
+      font-size: 1.2rem;
     }
   
     .Navbar .rightSide .links {

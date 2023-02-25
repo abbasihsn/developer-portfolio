@@ -37,7 +37,7 @@
   height: 25px;
   right: -17px;
   background-color: var(--text-color);
-  border: 4px solid #FF9F55;
+  border: 4px solid #620a35;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -90,13 +90,7 @@
   left: -16px;
 }
 
-/* The actual content */
-.work__content {
-  padding: 20px 30px;
-  background-color: var(--project--item-color);
-  position: relative;
-  border-radius: 6px;
-}
+
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {

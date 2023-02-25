@@ -14,6 +14,7 @@ import sqlLogo from "../../assets/mysql.png"
 import postgressLogo from "../../assets/postgress.png"
 import nodeLogo from "../../assets/nodejs.png"
 import reactLogo from "../../assets/react.png"
+import nginxLogo from "../../assets/nginx.png"
 import SkillItem from "./SkillItem"
 import { useState, useEffect } from "react"
 import useWindowDimensions from "../UI/useWindowDimensions"
@@ -36,6 +37,7 @@ const skillList =
         { title: "MySQL", id: 12, src: sqlLogo, expertise: "+4 years" },
         { title: "Postman", id: 13, src: postmanLogo, expertise: "+3 years" },
         { title: "GIT", id: 14, src: gitLogo, expertise: "+5 years" },
+        { title: "Nginx", id: 15, src: nginxLogo, expertise: "+1 years" },
     ]
 const Skills = () => {
 
