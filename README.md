@@ -1,5 +1,13 @@
-# Pure HTML, CSS and JS based react project without any third-party packages
+# Pure HTML, CSS and JS based react project 
+without any third-party packages
 ![alt text](./demo.png)
+
+# Implemented features
+* Type writer effect in navbar
+* Skill list automated carousel
+* Fully responsive design
+* Education and Work experience timeline
+* Project list automated and manual carousel
 
 
 # Getting Started with Create React App
