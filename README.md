@@ -1,3 +1,7 @@
+# Pure HTML, CSS and JS based react project without any third-party packages
+![alt text](./demo.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
