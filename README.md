@@ -9,6 +9,11 @@ without any third-party packages
 * Education and Work experience timeline
 * Project list automated and manual carousel
 
+# Next steps
+* having a single json file to provide data
+* add day/night mode 
+* add automatic scroll to top
+* add blog section
 
 # Getting Started with Create React App
 
