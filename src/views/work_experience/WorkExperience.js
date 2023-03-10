@@ -58,8 +58,8 @@ const WorkExperience = props => {
             {
                 workList.map((item, idx) => {
                     const dir = (idx % 2 === 0) ? "right__work" : "left__work"
-                    return <div key={item.degree} className={`work__container ${dir}`} >
-                        <WorkExperienceItem start={item.start} end={item.end} position={item.position} company={item.company} location={item.location} focus={item.focus} />
+                    return <div  key={item.start+item.end+item.company} className={`work__container ${dir}`} >
+                        <WorkExperienceItem start={item.start} end={item.end} position={item.position} company={item.company} location={item.location} focus={item.focus}/>
                     </div>
                 })
             }

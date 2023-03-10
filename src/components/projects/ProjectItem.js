@@ -1,7 +1,7 @@
 import classes from "./ProjectItem.module.css"
 const ProjectItem = props => {
 
-    return <div onClick={props.onClick} className={`${classes.project__item} ${props.type === "app" ? classes.application : ""}`}>
+    return <div onClick={()=>props.onClick(props.id)} className={`${classes.project__item} ${props.type === "app" ? classes.application : ""}`}>
         <img src={props.src} alt={props.id} />
         <div className={classes.project__item__text}>
             <div className={classes.tools}>

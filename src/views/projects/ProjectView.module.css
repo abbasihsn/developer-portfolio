@@ -13,7 +13,7 @@
 }
 
 
-@media only screen and (max-width: 1700px) {
+@media only screen and (max-width: 1800px) {
     .project_view__container{
         padding: 100px 5px;
         grid-template-columns: auto auto auto;
