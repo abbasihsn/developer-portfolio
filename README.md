@@ -1,3 +1,20 @@
+# Pure HTML, CSS and JS based react project 
+without any third-party packages
+![alt text](./demo.png)
+
+# Implemented features
+* Type writer effect in navbar
+* Skill list automated carousel
+* Fully responsive design
+* Education and Work experience timeline
+* Project list automated and manual carousel
+
+# Next steps
+* having a single json file to provide data
+* add day/night mode 
+* add automatic scroll to top
+* add blog section
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
