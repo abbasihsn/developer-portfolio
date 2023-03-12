@@ -1,44 +1,50 @@
 .project_detail__container{
-    padding: 100px 10px 5px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    padding: 100px 10px 5px;
 }
 
-
-.project_detail__container__upsection{
+.project_detail__text__container{
     padding: 0px 50px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
 }
-.project_detail__container__upsection h1{
+
+
+.project_detail__text__container>h1{
     font-size: 2rem;
     background: -webkit-linear-gradient(var(--text-color), var(--text-color1));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-.project_detail__container__upsection p{
-    font-size: 1.2rem;
-    color: var(--text-color);
+.below__title{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.project_detail__container__tools p{
+.below__title>p{
     font-size: 1rem;
     color: var(--title-color);
 }
 
+.project_detail__text__container>p{
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
 .project_detail__container__button{
-    margin: 0px;
-    width: 50%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: space-between;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .project_detail__container__button button{
     background-color: transparent;
@@ -51,18 +57,39 @@
 }
 
 .project_detail__container__image{
-    width: 50vw;
+    width: 80%;
     display: flex;
-    justify-content: center;
-    margin: 50px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     padding: 40px;
     background-color: var(--project--item-color);
     border-radius: 10px;
     box-shadow: rgba(190, 190, 221, 0.25) 0px 0px 20px -20px, rgba(18, 196, 98, 0.3) 0px 30px 60px -30px, rgba(16, 26, 173, 0.35) 0px -2px 6px 0px inset;
-    
 }
 
-.project_detail__container__image>img{
+
+.small__images__column{
+    display: flex;
+    flex-direction: column;
+    flex:10%;
+}
+
+.small__images__column>img{
+    width: 80%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.active{
+    box-shadow: 0 0 20px var(--title-color);
+}
+
+.zoomed__image{
+    flex: 50%;
+}
+
+.zoomed__image>img{
     border-radius: 10px;
-    width: 90%;
+    width: 100%;
 }

@@ -4,14 +4,14 @@ const Education = props => {
 
 
     const educationList = [
-        {
-            start: "2021",
-            end: "Present",
-            degree: "PhD",
-            university: "Carleton University",
-            gpa: "A+",
-            thesis: "Autonomous vehicle in adverse weather"
-        },
+        // {
+        //     start: "2021",
+        //     end: "Present",
+        //     degree: "PhD",
+        //     university: "Carleton University",
+        //     gpa: "A+",
+        //     thesis: "Autonomous vehicle in adverse weather"
+        // },
         {
             start: "2013",
             end: "2015",
