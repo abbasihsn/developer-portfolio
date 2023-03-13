@@ -1,14 +1,14 @@
-.project_detail__container{
+.project_detail__container__app{
     width: 90vw;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
     align-self: center;
     padding: 100px 10px 5px;
 }
 
-.project_detail__text__container{
+.project_detail__text__container__app{
     padding: 0px 50px;
     display: flex;
     flex-direction: column;
@@ -17,25 +17,25 @@
 }
 
 
-.project_detail__text__container>h1{
+.project_detail__text__container__app>h1{
     font-size: 2rem;
     background: -webkit-linear-gradient(var(--text-color), var(--text-color1));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.below__title{
+.below__title__app{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.below__title>p{
+.below__title__app>p{
     font-size: 1rem;
     color: var(--title-color);
 }
 
-.project_detail__text__container>p{
+.project_detail__text__container__app>p{
     font-size: 1.2rem;
     color: var(--text-color);
 }
@@ -59,11 +59,11 @@
 }
 
 /* Image section */
-.project_detail__container__image{
-    width: 80vw;
+.project_detail__container__image__app{
+    width: 50vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--project--item-color);
     border-radius: 10px;
@@ -71,9 +71,9 @@
 }
 
 
-.small__images__column{
-    display: grid;
-    grid-template-columns: auto auto;
+.small__images__column__app{
+    display: flex;
+    flex-direction: column;
     row-gap: 10px;
     column-gap: 10px;
     flex:30%;
@@ -81,7 +81,7 @@
     align-self: flex-start;
 }
 
-.small__images__column>img{
+.small__images__column__app>img{
     height: 100px;
     border-radius: 5px;
     margin: auto;
@@ -91,16 +91,17 @@
     box-shadow: 0 0 20px var(--title-color);
 }
 
-.zoomed__image{
+.zoomed__image__app{
     padding: 10px;
     flex: 70%;
     display: flex;
 }
 
-.zoomed__image>img{
+.zoomed__image__app>img{
     margin: auto;
-    border-radius: 10px;
-    height:50vh;
+    padding: 10px 0px;
+    border-radius: 20px;
+    height:80vh;
 }
 
 
@@ -113,7 +114,7 @@
         font-size: 0.8rem;
     }
 
-    .project_detail__text__container>p{
+    .project_detail__text__container__app>p{
         font-size: 1rem;
     }
 
@@ -121,18 +122,18 @@
         font-size: 0.8rem;
     }
 
-    .small__images__column{
+    .small__images__column__app{
         display: grid;
         grid-template-columns: auto auto auto auto;
         margin: auto;
     }
 
-    .project_detail__container__image{
+    .project_detail__container__image__app{
         display: flex;
         flex-direction: column;
     }
 
-    .zoomed__image>img{
+    .zoomed__image__app>img{
         height:60vh;
     }
 }
@@ -147,7 +148,7 @@
         font-size: 0.7rem;
     }
 
-    .project_detail__text__container>p{
+    .project_detail__text__container__app>p{
         font-size: 0.8rem;
     }
 
@@ -155,18 +156,18 @@
         font-size: 0.7rem;
     }
 
-    .small__images__column{
+    .small__images__column__app{
         display: grid;
         grid-template-columns: auto auto auto;
         margin: auto;
     }
 
-    .project_detail__container__image{
+    .project_detail__container__image__app{
         display: flex;
         flex-direction: column;
     }
 
-    .zoomed__image>img{
+    .zoomed__image__app>img{
         height: 100%;
         width: 75vw;
     }
@@ -182,7 +183,7 @@
         font-size: 0.7rem;
     }
 
-    .project_detail__text__container>p{
+    .project_detail__text__container__app>p{
         font-size: 0.8rem;
     }
 
@@ -190,18 +191,18 @@
         font-size: 0.7rem;
     }
 
-    .small__images__column{
+    .small__images__column__app{
         display: grid;
         grid-template-columns: auto auto;
         margin: auto;
     }
 
-    .project_detail__container__image{
+    .project_detail__container__image__app{
         display: flex;
         flex-direction: column;
     }
 
-    .zoomed__image>img{
+    .zoomed__image__app>img{
         height: 100%;
         width: 75vw;
     }
